@@ -5,11 +5,11 @@
  */
 int main(void)
 {
-int n = 97;
-while (n <= 122);
+char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+int i;
+for (i = 0; i < 26; i++)
 {
-putchar(n);
-n++;
+putchar(alph[i]);
 }
 putchar('\n');
 return (0);
