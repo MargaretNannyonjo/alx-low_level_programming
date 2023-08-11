@@ -1,19 +1,15 @@
 #include <stdio.h>
 /**
-  *Description:main - Prints alphabets in uppercase
+  *Description:main - Prints the alphabet
   *Return: 0 if success
   */
 int main(void)
 {
-int n = 97;
-int m = 65;
-while (n >= 122)
+char alph[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+int i;
+for (i = 0; i < 52; i++)
 {
-putchar(n);
-}
-while (m <= 90)
-{
-putchar(m);
+putchar(alph[i]);
 }
 putchar('\n');
 return (0);
