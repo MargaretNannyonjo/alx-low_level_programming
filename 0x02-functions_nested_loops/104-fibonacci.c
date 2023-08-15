@@ -11,7 +11,7 @@ while (i < 98)
 next = a + b;
 a = b;
 b = next;
-printf("%lu ", next);
+printf("%lu, ", next);
 i++;
 }
 putchar('\n');
