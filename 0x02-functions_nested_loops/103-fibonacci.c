@@ -5,8 +5,7 @@
  */
 int main(void)
 {
-int i;
-unsigned int i, k, next, sum;
+unsigned int i, j, k, next, sum;
 j = 1;
 k = 2;
 sum = 0;
@@ -20,6 +19,6 @@ next = j + k;
 j = k;
 k = next;
 }
-printf("%lu\n", sum);
+printf("%u\n", sum);
 return (0);
 }
