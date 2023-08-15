@@ -8,14 +8,12 @@ int main(void)
 unsigned long int i = 0, a = 0, b = 1, next = 0;
 while (i < 98)
 {
+printf("%lu, ", a);
 next = a + b;
 a = b;
 b = next;
-printf("%lu, ", next);
 i++;
 }
 putchar('\n');
 return (0);
 }
-
-
