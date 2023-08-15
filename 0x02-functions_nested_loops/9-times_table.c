@@ -19,20 +19,16 @@ if (z < 10)
 {
 _putchar(32);
 }
-}
-else if (z < 10 && x != 0)
-{
-_putchar(32);
-_putchar(32);
-}
-if (z < 10)
-{
-_putchar(z + '0');
-}
 else
 {
 _putchar((z / 10) + '0');
+}
+}
 _putchar((z % 10) + '0');
+if (y != 9)
+{
+_putchar(44);
+_putchar(32);
 }
 }
 _putchar('\n');
