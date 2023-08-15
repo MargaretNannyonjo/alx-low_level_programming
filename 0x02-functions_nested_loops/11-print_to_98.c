@@ -13,15 +13,11 @@ for (; n <= 98; n++)
 {
 if (n == 98)
 {
-printf("%d", n);
-printf("\n");
+printf("%d\n", n);
 }
-break
-{
 else
 {
 printf("%d, ", n);
-}
 }
 }
 }
@@ -31,10 +27,8 @@ for (; n >= 98; n--)
 {
 if (n == 98)
 {
-printf("%d", n);
-printf("\n");
-break
-{
+printf("%d\n", n);
+}
 else
 {
 printf("%d, ", n);
