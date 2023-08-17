@@ -1,35 +1,32 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - prints numbers 1-100
+ * main - prints numbers 1-100 with FizzBuzz conditions
  * Return: 0 if success
  */
 int main(void)
 {
 int i;
-for (i = 0; i <= 100; i++)
+for (i = 1; i <= 100; i++)
 {
-if (i % 3 == 0 && i % 5 != 0)
+if (i % 3 == 0 && i % 5 == 0)
 {
-printf(" Fizz");
+printf("FizzBuzz ");
 }
-else if (i % 5 == 0 && i % 3 != 0)
+else if (i % 3 == 0)
 {
-printf(" Buzz");
+printf("Fizz ");
 }
-else if (i % 3 == 0 && i % 5 == 0)
+else if (i % 5 == 0)
 {
-printf(" FizzBuzz");
-}
-else if (i == 1)
-{
-printf("%d", i);
+printf("Buzz ");
 }
 else
 {
-printf(" %d", i);
+printf("%d ", i);
 }
 }
 printf("\n");
-return (0);
+return 0;
 }
+
