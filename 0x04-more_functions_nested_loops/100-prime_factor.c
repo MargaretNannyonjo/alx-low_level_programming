@@ -6,20 +6,13 @@
  */
 int main(void)
 {
-long prime = 612852475143, divisor;
-while (divisor <(prime / 2))
+long int n = 612852475143;
+long int i;
+for (i = 2; i < n; i++)
 {
-if ((prime % 2) == 0)
-{
-prime /= 2;
-continue;
+while (n % i == 0)
+n /= i;
 }
-for (divisor = 3; divisor < (prime / 2); divisor += 2)
-{
-if ((prime % divisor) == 0)
-prime /= divisor;
-}
-}
-printf("%ld\n", prime);
+printf("%ld\n", n);
 return (0);
 }
